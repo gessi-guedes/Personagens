@@ -1,4 +1,11 @@
 import styled from 'styled-components';
+import React from 'react';
+
+
+const breakpoints = {
+  mobile: '480px',
+  tablet: '768px',
+};
 
 export const StyledDiv = styled.div`
     width: 90%;
@@ -14,6 +21,13 @@ export const StyledDiv = styled.div`
 
         box-shadow: 1px 1px 10px black;
     }
+
+    @media (max-width: ${breakpoints.tablet}) {
+      width:500%;
+      height:100vh;
+  }
+    
+    
 `;
 
 export const StyledName = styled.h1`
@@ -29,9 +43,14 @@ export const StyledName = styled.h1`
       color:pink;
       box-shadow:1px 1px 10px black;
     }
+
+    @media (max-width: ${breakpoints.tablet}) {
+      font-size:31px;
+  }
+
   `;
 
-  export const StyledInfo = styled.p`
+export const StyledInfo = styled.p`
     fount-size:18px;
     color:white;
 
@@ -43,7 +62,7 @@ export const StyledName = styled.h1`
     
   `;
 
-  export const StyledImg = styled.img`
+export const StyledImg = styled.img`
     width:70%;
     border-radius:10px;
 
@@ -51,4 +70,9 @@ export const StyledName = styled.h1`
       transform:scale(1.04);
 
     }
+
+    @media (max-width: ${breakpoints.tablet}) {
+    width:85%;
+    
+  }
   `;
