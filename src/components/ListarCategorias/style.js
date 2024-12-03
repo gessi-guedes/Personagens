@@ -19,7 +19,7 @@ export const StyledButton = styled.button`
 `;
 
 export const StyledImg = styled.img`
-  width:100px;
+  width:30%;
 `;
 
 

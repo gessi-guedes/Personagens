@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledDiv = styled.div`
-    width: 30%;
+    width: 90%;
     padding: 18px;
     margin: 1px;
     border: 2px solid lightgrey;
