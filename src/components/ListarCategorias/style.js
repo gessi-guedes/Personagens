@@ -37,9 +37,10 @@ export const StyledImg = styled.img`
   width:30%;
 
   @media (max-width: ${breakpoints.tablet}) {
-    width:45%;
+    width:45px;
     
   }
+    
 `;
 
 
