@@ -4,7 +4,7 @@ import React from 'react';
 
 const breakpoints = {
   mobile: '480px',
-  tablet: '768px',
+  tablet: '788px',
 };
 
 export const StyledDiv = styled.div`
@@ -23,8 +23,10 @@ export const StyledDiv = styled.div`
     }
 
     @media (max-width: ${breakpoints.tablet}) {
-      width:500%;
-      height:100vh;
+      width:500wh;
+      height:50vh;
+      margin-top:30%;
+
   }
     
     
