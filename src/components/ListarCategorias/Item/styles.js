@@ -24,15 +24,16 @@ export const StyledDiv = styled.div`
 
     @media (max-width: ${breakpoints.tablet}) {
       width:500wh;
-      height:50vh;
+      height:57vh;
       margin-top:30%;
 
   }
 
     @media (max-width: ${breakpoints.mobile}) {
       width:500wh;
-      height:50vh;
+      height:58vh;
       margin-top:30%;
+      
 
   }
     
@@ -78,7 +79,7 @@ export const StyledInfo = styled.p`
 
     @media (max-width: ${breakpoints.mobile}) {
       font-size:12px;
-
+      
     }
     
   `;
