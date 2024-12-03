@@ -30,8 +30,8 @@ export const StyledDiv = styled.div`
   }
 
     @media (max-width: ${breakpoints.mobile}) {
-      width:500wh;
-      height:58vh;
+      width:700wh;
+      height:57vh;
       margin-top:30%;
       
 

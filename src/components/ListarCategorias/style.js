@@ -15,6 +15,14 @@ export const StyledDiv = styled.div`
     align-items: center ;
     margin-top:10px auto;
    gap:10px;
+
+   @media (max-width: ${breakpoints.mobile}) {
+      width:100%;
+      height:57vh;
+      margin-top:30%;
+      
+
+  }
 `;
 
 
