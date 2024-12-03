@@ -1,4 +1,11 @@
 import styled from 'styled-components';
+import React from 'react';
+
+
+const breakpoints = {
+  mobile: '480px',
+  tablet: '788px',
+};
 
 export const StyledDiv = styled.div`
     width:80vw;
@@ -20,6 +27,11 @@ export const StyledButton = styled.button`
 
 export const StyledImg = styled.img`
   width:30%;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width:45%;
+    
+  }
 `;
 
 

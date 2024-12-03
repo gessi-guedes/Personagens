@@ -28,6 +28,13 @@ export const StyledDiv = styled.div`
       margin-top:30%;
 
   }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width:500wh;
+      height:50vh;
+      margin-top:30%;
+
+  }
     
     
 `;
@@ -48,7 +55,14 @@ export const StyledName = styled.h1`
 
     @media (max-width: ${breakpoints.tablet}) {
       font-size:31px;
-  }
+    }
+
+
+    @media (max-width: ${breakpoints.mobile}) {
+      font-size:18px;
+
+    }
+
 
   `;
 
@@ -59,6 +73,11 @@ export const StyledInfo = styled.p`
     &:hover{
       transform:scale(1.07);
       color: pink;
+
+    }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      font-size:12px;
 
     }
     
@@ -77,4 +96,10 @@ export const StyledImg = styled.img`
     width:85%;
     
   }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width:85%;
+    
+  }
+
   `;
