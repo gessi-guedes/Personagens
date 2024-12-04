@@ -23,7 +23,7 @@ export default function Listar() {
         }
     };
 
-    
+
     const limitPass = () => {
         getCategories(pages)
         if (count < characters.length - 1) {
@@ -38,7 +38,7 @@ export default function Listar() {
             setCount(0)
             setPages(1)
             getCategories(1)
-            
+
         }
 
     };
@@ -47,25 +47,25 @@ export default function Listar() {
     const limitBack = () => {
         if (count > 0) {
             setCount(() => count - 1);
-        }else if(pages === 1){
+        } else if (pages === 1) {
             getCategories(final)
             setPages(final)
             setCount(5)
-            
-        }else if(pages != final){
+
+        } else if (pages != final) {
             getCategories(pages - 1)
             setPages(pages - 1)
             setCount(characters.length - 1)
-        }else{    
+        } else {
             const b = async () => {
-               await getCategories(final - 1) 
-               setCount(19)
+                await getCategories(final - 1)
+                setCount(19)
             }
             b()
             setPages(final - 1)
-            
-            
-        } 
+
+
+        }
 
     };
 
@@ -79,19 +79,29 @@ export default function Listar() {
 
             <s.StyledDiv>
 
-                <s.StyledButton onClick={limitBack}>
+                <s.StyledButton className="seta" onClick={limitBack}>
                     <s.StyledImg src={Left} />
                 </s.StyledButton>
 
 
                 {characters.length > 0 && <Item category={characters[count]} />}
 
-                <s.StyledButton onClick={limitPass}>
+                <s.StyledButton className="seta" onClick={limitPass}>
                     <s.StyledImg src={Right} />
                 </s.StyledButton>
 
             </s.StyledDiv>
             
+            <s.StyledDivMobile>
+                <s.StyledButton2 className="seta" onClick={limitBack}>
+                    <s.StyledImg src={Left} />
+                </s.StyledButton2>
+
+                <s.StyledButton2 className="seta" onClick={limitPass}>
+                    <s.StyledImg src={Right} />
+                </s.StyledButton2>
+
+            </s.StyledDivMobile>
         </s.StyledDivPrimary>
     );
 }

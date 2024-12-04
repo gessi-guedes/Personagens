@@ -3,7 +3,7 @@ import React from 'react';
 
 
 const breakpoints = {
-  mobile: '480px',
+  mobile: '470px',
   tablet: '788px',
 };
 
@@ -14,12 +14,13 @@ export const StyledDiv = styled.div`
     justify-content:center;
     align-items: center ;
     margin-top:10px auto;
-   gap:10px;
+    gap:10px;
+    
 
    @media (max-width: ${breakpoints.mobile}) {
-      width:100%;
+      width:80%;
       height:57vh;
-      margin-top:30%;
+      margin-top:10px;
       
 
   }
@@ -29,6 +30,27 @@ export const StyledDiv = styled.div`
 export const StyledButton = styled.button`
     background-color:transparent;
     border:0px;
+    
+    @media (max-width: ${breakpoints.mobile}) {
+      display:none;
+      
+
+  }
+    
+
+`;
+
+
+export const StyledButton2 = styled.button`
+    background-color:transparent;
+    border:0px;
+     display:none;
+    
+    @media (max-width: ${breakpoints.mobile}) {
+      display:block;
+      
+
+  }
     
 
 `;
@@ -45,11 +67,17 @@ export const StyledImg = styled.img`
 
 
 export const StyledDivPrimary = styled.div`
-    width:100vw;
+    width:100%;
     heigth:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items: center ;
     gap: 10px;
+`;
+
+export const StyledDivMobile = styled.div`
+  display:flex;
+  margin-top:30%;
+  gap:10px;
 `;

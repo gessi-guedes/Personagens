@@ -5,7 +5,9 @@ function App() {
 
   return (
     <>
-      <Listar/>
+      <div id='vid'><img id='logo' src="./src/assets/logoRaM.png" alt="" /></div>
+
+      <Listar />
     </>
   )
 }

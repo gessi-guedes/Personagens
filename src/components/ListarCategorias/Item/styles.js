@@ -50,7 +50,7 @@ export const StyledName = styled.h1`
   padding:2px;
 
     &:hover{
-      color:pink;
+      color:lightblue;
       box-shadow:1px 1px 10px black;
     }
 
@@ -73,7 +73,7 @@ export const StyledInfo = styled.p`
 
     &:hover{
       transform:scale(1.07);
-      color: pink;
+      color: lightblue;
 
     }
 
