@@ -5,28 +5,26 @@ import Lista from "./routes/Lista.jsx"
 import { StrictMode } from 'react'
 import App from './App.jsx'
 import './index.css'
-import Listar from './components/ListarCategorias/index.jsx'
 
 const router = createBrowserRouter([
   {
-    path:"/",
+    path: "/",
     element: <App />,
-    children:[
+    children: [
       {
-        path:"/",
+        path: "/",
         element: <Home />,
       },
       {
-        path:"Lista",
-        element:<Lista/>
+        path: "/Lista",  // Defina o caminho absoluto para a rota "Lista"
+        element: <Lista />,
       }
     ]
   }
-
-])
+]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
-)
+  </StrictMode>
+);
