@@ -3,23 +3,6 @@
   margin: 0 auto;
   text-align: center;
   gap: 10px;
-}
-
-#logo{
-  width: 20%;
-  display: none;
- 
-}
-
-#vid{
-  display: flex;
-  justify-content:center ;
-  width: 50wh;
-}
-
-@media (max-width:768px) {
-  #logo{
-    display: block;
-  }
+  height: 100vh;
   
 }

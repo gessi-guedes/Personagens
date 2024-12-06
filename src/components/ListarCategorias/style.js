@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 
 const breakpoints = {
@@ -8,22 +9,14 @@ const breakpoints = {
 };
 
 export const StyledDiv = styled.div`
-    width:80vw;
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items: center ;
-    margin-top:10px auto;
-    gap:10px;
-    
-
-   @media (max-width: ${breakpoints.mobile}) {
-      width:80%;
-      height:57vh;
-      margin-top:10px;
-      
-
-  }
+   width:90vw;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   justify-items:center;
+   padding-top:50px;
+   padding:5px;
+  
 `;
 
 
@@ -44,7 +37,7 @@ export const StyledButton = styled.button`
 export const StyledButton2 = styled.button`
     background-color:transparent;
     border:0px;
-     display:none;
+    display:none;
     
     @media (max-width: ${breakpoints.mobile}) {
       display:block;
@@ -56,7 +49,7 @@ export const StyledButton2 = styled.button`
 `;
 
 export const StyledImg = styled.img`
-  width:30%;
+  width:20%;
 
   @media (max-width: ${breakpoints.tablet}) {
     width:45px;
@@ -70,10 +63,17 @@ export const StyledDivPrimary = styled.div`
     width:100%;
     heigth:100vh;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     justify-content:center;
     align-items: center ;
     gap: 10px;
+    background-color:black;
+    
+    @media (max-width: ${breakpoints.mobile}){
+      flex-wrap: wrap;
+      flex-direction:column;
+      gap:0px;
+    }
 `;
 
 export const StyledDivMobile = styled.div`

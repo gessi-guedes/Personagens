@@ -5,6 +5,7 @@ import { BASE_URL } from "../../constants";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import * as s from './style'
+import { Link } from 'react-router-dom';
 
 export default function Listar() {
     const [characters, setCharacters] = useState([]);
@@ -74,11 +75,9 @@ export default function Listar() {
     }, [refresh]);
 
 
-    return (
-        <s.StyledDivPrimary>
-
-            <s.StyledDiv>
-
+    return (<>
+        <s.StyledDiv>
+            <s.StyledDivPrimary>
                 <s.StyledButton className="seta" onClick={limitBack}>
                     <s.StyledImg src={Left} />
                 </s.StyledButton>
@@ -90,18 +89,27 @@ export default function Listar() {
                     <s.StyledImg src={Right} />
                 </s.StyledButton>
 
-            </s.StyledDiv>
-            
-            <s.StyledDivMobile>
-                <s.StyledButton2 className="seta" onClick={limitBack}>
-                    <s.StyledImg src={Left} />
-                </s.StyledButton2>
 
-                <s.StyledButton2 className="seta" onClick={limitPass}>
-                    <s.StyledImg src={Right} />
-                </s.StyledButton2>
 
-            </s.StyledDivMobile>
-        </s.StyledDivPrimary>
-    );
+
+                <s.StyledDivMobile>
+                    <s.StyledButton2 className="seta" onClick={limitBack}>
+                        <s.StyledImg src={Left} />
+                    </s.StyledButton2>
+
+                    <s.StyledButton2 className="seta" onClick={limitPass}>
+                        <s.StyledImg src={Right} />
+                    </s.StyledButton2>
+
+                </s.StyledDivMobile>
+            </s.StyledDivPrimary>
+
+
+            <Link to={"/"}>
+                    <button className="bttn" id="back" type="button">Voltar</button>
+                </Link>
+
+        </s.StyledDiv>
+
+    </>);
 }

@@ -1,13 +1,12 @@
 import './App.css'
 import Listar from './components/ListarCategorias'
+import { Outlet } from "react-router-dom";
 
 function App() {
 
   return (
     <>
-      <div id='vid'><img id='logo' src="./src/assets/logoRaM.png" alt="" /></div>
-
-      <Listar />
+      <Outlet />
     </>
   )
 }

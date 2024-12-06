@@ -8,12 +8,16 @@ const breakpoints = {
 };
 
 export const StyledDiv = styled.div`
-    width: 90%;
-    padding: 18px;
-    margin: 1px;
+    width: 50vw;
+    heigth:600px;
+    margin: 10px;
+    padding:18px;
+    position:relative;
+    box-sizing: border-box;
     border: 2px solid lightgrey;
     border-radius: 20px;
     text-align: center;
+    justify:content:center;
     transition-duration: 0.5s;
     background-color:light black;
     max-height:90vh;
@@ -41,10 +45,12 @@ export const StyledDiv = styled.div`
 `;
 
 export const StyledName = styled.h1`
-  font-size: 21px;
+  font-size: 18px;
   color: #333;
   text-align: center;
   color:white;
+  width:100%;
+
   border:2px solid lightgrey;
   border-radius:2px;
   padding:2px;
@@ -68,7 +74,7 @@ export const StyledName = styled.h1`
   `;
 
 export const StyledInfo = styled.p`
-    fount-size:18px;
+    fount-size:15px;
     color:white;
 
     &:hover{
@@ -85,7 +91,7 @@ export const StyledInfo = styled.p`
   `;
 
 export const StyledImg = styled.img`
-    width:70%;
+    width:80%;
     border-radius:10px;
 
     &:hover{
