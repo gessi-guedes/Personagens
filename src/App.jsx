@@ -1,5 +1,5 @@
 import './App.css'
-import Listar from './components/ListarCategorias'
+import Home from './routes/Home'
 import { Outlet } from "react-router-dom";
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
   return (
     <>
       <Outlet />
+      <Home />
     </>
   )
 }

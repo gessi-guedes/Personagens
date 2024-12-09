@@ -12,11 +12,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/Lista",  // Defina o caminho absoluto para a rota "Lista"
+        path: "/Lista",  
         element: <Lista />,
       }
     ]
