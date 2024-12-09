@@ -16,7 +16,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "Lista",  // Defina o caminho absoluto para a rota "Lista"
+        path: "/Lista",  // Defina o caminho absoluto para a rota "Lista"
         element: <Lista />,
       }
     ]
